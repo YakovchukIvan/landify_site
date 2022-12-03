@@ -1,0 +1,173 @@
+:root {
+    --container: 1440px;
+    --text-color: #111827;
+    --white-color: #fff; 
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+}
+
+.hero_content {
+    /* border: 7px solid rgb(24, 124, 255); */
+}
+
+.hero_landify {
+    padding-left: 40px;
+}
+
+.hero_landify::before{
+    content: "";
+    background-image: url(./img/svg/logo.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 32px;
+    height: 32px;
+
+}
+
+.hero_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0px 152px 0;
+    margin-bottom: 70px;
+}
+
+.hero_nav_list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero_nav_item:nth-child(1) {
+    padding-right: 24px;
+}
+
+
+.hero_nav_item {
+
+} 
+
+.hero_nav_item > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.hero_nav_item>a:hover {
+    color: rgb(162, 53, 177);
+}
+
+.hero_nav_vector {
+    max-width: 290px;
+}
+
+.btn_vector {
+    width: 135px;
+    height: 40px;
+    border: none;
+}
+
+.btn_google {
+    background-image: url(./img/pictures/Google-Play-logo.png);
+    margin-right: 12px;
+}
+
+.btn_apple {
+    background-image: url(./img/pictures/Apple-logo.png);
+}
+
+.hero_container {
+    display: flex;
+}
+
+.hero_wrapper {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_title {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    /* line-height: 72px; */
+}
+
+.hero_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.hero_wrapper_btn {
+    display: flex;
+    /* flex-direction: row; */
+    gap: 16px;
+}
+
+.hero_btn {
+    width: 140px;
+    height: 55px;
+    background-color: #7C3AED; 
+    border-radius: 8px;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hero_btn:hover {
+    background-color: #7c3aedec;
+}
+
+.hero_btn:active {
+    background-color: #7C3AED;
+}
+
+.hero_link {
+    width: 180px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7C3AED;
+    text-decoration: none;
+}
+
+.hero_link > img {
+    padding-right: 8px;
+}
+
+.hero_phone-mockup {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
