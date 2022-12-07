@@ -27,11 +27,23 @@ header, section {
 }
 
 .hero_content {
-    /* background-image: url(./img/pictures/hero-bg.jpg);
+    margin-bottom: 96px;
+    /* border: 7px solid rgb(24, 124, 255); */
+
+    /* background-image: url(./img/pictures/hero-bg.png);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: top; */
-    margin-bottom: 16px;
+}
+
+.purple_circle {
+    width: 350px;
+    height: 350px;
+    background: #7C3AED;
+    opacity: 0.3;
+    border-radius: 50%;
+    filter: blur(5px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero_landify {
@@ -116,6 +128,7 @@ header, section {
 
 .hero_container {
     display: flex;
+    position: relative;
 }
 
 .hero_wrapper {
@@ -194,6 +207,39 @@ header, section {
     display: flex;
     justify-content: center;
 }
+
+.band > img {
+    position: absolute;
+}
+
+.bg_band_1 > img {
+    left: 0;
+    bottom: 60px;
+}
+
+.bg_band_2 > img {
+    left: 0;
+    bottom: -23px;
+}
+
+.bg_band_3 > img {
+    right: 0;
+    bottom: 251px;
+    z-index: -1;
+}
+
+.bg_band_4 > img {
+    right: 0;
+    bottom: 165px;
+    z-index: -1;
+}
+
+.bg_band_5 > img {
+    right: 0;
+    bottom: 155px;
+    z-index: -1;
+}
+
 
 /* |||  logo_clouds  ||| */
 
