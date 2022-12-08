@@ -507,11 +507,31 @@ header, section {
     color: var(--text-color);
 }
 
-.features_wrapper-row {
+/* ||||   logo_clouds   |||| */
+
+.logo_clouds {
     display: flex;
-    gap: 32px;
+    margin: 90px 0 90px 0;
 }
 
-.feature_item {
+.clouds_wrapper {
+    width: 50%;
+}
 
+.clauds_vector {
+    background-image: url(./img/svg/clauds_vector.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: 540px;
+    height: 270px;
+    border: 3px solid salmon;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    padding: 40px 0 80px 0;
+}
+
+.clauds_vector > img {
+    max-width: 64px;
+    max-height: 64px;
 }
