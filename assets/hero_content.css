@@ -105,6 +105,7 @@ header, section {
 .btn_vector {
     width: 135px;
     height: 40px;
+    border-radius: 4px;
     border: none;
     cursor: pointer;
 }
@@ -120,6 +121,7 @@ header, section {
 .btn_google {
     background-image: url(./img/pictures/Google-Play-logo.png);
     margin-right: 12px;
+    
 }
 
 .btn_apple {
@@ -561,7 +563,6 @@ header, section {
     gap: 16px;
     /* transform-origin: 0 0;
     transform: rotate(0deg) skew(0deg); */
-    border: 7px solid rgb(24, 124, 255);
 }
 
 .tools_block-img > img {
@@ -582,3 +583,159 @@ header, section {
 }
 
 
+/* |||||   mobile_adaptive   ||||| */
+
+
+.mobile_applications {
+    background: #1DB5BE;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+
+.applications_container {
+    width: 100%;
+    max-width: var(--container);
+    display: flex;
+    gap: 60px;
+}
+
+.mobile_applications_wrapper1 {
+    width: 50%; 
+    margin: 110px 0 110px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.mobile_applications-text > h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.mobile_applications-text>p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.mobile_applications-btn > p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.mobile_applications_wrapper2 {
+    display: flex;
+    width: 50%;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile_applications_img1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mobile_applications_img2 {
+    position: absolute;
+    bottom: -3px;
+    right: 0px;
+}
+
+/* |||   footer   ||| */
+
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+
+.footer_container {
+    width: 100%;
+    max-width: var(--container);
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 64px 0;
+}
+
+.footer_wrapper1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_wrapper1 > ul {
+    margin: 0 0 12px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer_logo {
+    margin-bottom: 24px;
+}
+
+.list_link_top {
+    display: flex;
+    gap: 24px;
+}
+
+.list_link_bottom {
+    display: flex;
+    gap: 24px;
+}
+
+.list_link_top > li > a {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.list_link_bottom > li > a {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer_privacy {
+    color: #D1D5DB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 12px;
+}
+
+.footer_wrapper2 {
+
+}
+
+.mobile_applications-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_applications-btn>p {
+    color: var(--white-color);
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
