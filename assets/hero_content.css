@@ -59,7 +59,6 @@ header, section {
     top: 1px;
     width: 32px;
     height: 32px;
-
 }
 
 .hero_nav {
@@ -282,7 +281,70 @@ header, section {
         bottom: 251px;
         z-index: -1;
     }
+}
 
+@media screen and (max-width: 375px) {
+    .hero_nav_list>ul {
+        display: none;
+    }
+
+    .hero_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_wrapper {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .hero_nav {
+        padding: 0;
+        padding-top: 20px;
+        margin: 0;
+        margin-bottom: 68px;
+    }
+    
+    .hero_landify::before {
+        left: 1px;
+        top: -4px;
+    }
+
+    .hero_nav_vector {
+        display: none;
+    }
+
+    .hero_subtitle {
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .hero_wrapper_btn {
+        margin-bottom: 80px;
+    }
+
+    .band>img {
+        display: none;
+    }
+
+    .bg_band_1>img {
+        display: none;;
+    }
+
+    .bg_band_2>img {
+        display: none;
+    }
+
+    .bg_band_3>img {
+        display: none;
+    }
+    .bg_band_4>img {
+        display: none;
+    }
+    .bg_band_5>img {
+        display: none;
+    }
 }
 
 
@@ -300,6 +362,12 @@ header, section {
     list-style-type: none;
     margin: 0;
     padding: 40px 160px;
+}
+
+@media screen and (max-width: 375px) {
+    .logo_clouds_list {
+        padding: 0;
+    }
 }
 
 /* |||  Features  ||| */
@@ -384,6 +452,11 @@ header, section {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .features_wrapper {
+        flex-wrap: wrap;
+    }
+}
 
 /* |||   testimonial   ||| */
 
@@ -533,8 +606,6 @@ header, section {
 }
 
 
-
-
 /* |||   metrics   ||| */
 
 
@@ -621,7 +692,6 @@ header, section {
         margin: 8px 0 48px 0;
     }
 
-
    .metrics_wrapper-two {
         width: 100%;
         padding: 0 0 0 20px;
@@ -641,6 +711,17 @@ header, section {
    }
 }
 
+@media screen and (max-width: 375px) {
+    .metrics_card-top {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .metrics_card-bottom {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
 
 
 
@@ -729,6 +810,39 @@ header, section {
     }
     .tools_wrapper_vector {
         top: -75px;
+        width: 328px;
+        height: 328px;
+    }
+
+    .tools_block-img>img {
+        max-width: 46px;
+        margin: 15px 17px 0px 17px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about_tools {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tools_wrapper-one {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .tools_wrapper-two {
+        margin: 0 0 100px 0;
+        width: 100%;
+    }
+
+    .tools_wrapper-one>h2 {
+        margin: 20px 0 8px 0;
+    }
+
+    .tools_wrapper_vector {
+        top: -175px;
+        left: -5px;
         width: 328px;
         height: 328px;
     }
